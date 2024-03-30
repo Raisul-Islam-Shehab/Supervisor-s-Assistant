@@ -52,8 +52,15 @@ export const PassengerTable = ({
                 <Card key={index} className="card-item mb-3">
                   <Card.Header as="h3">{passenger.name}</Card.Header>
                   <Card.Body>
-                    <Card.Text>{passenger.seat}</Card.Text>
-                    <Card.Text>{passenger.dest}</Card.Text>
+                  <Card.Text>
+                      <h5>Phone: {passenger.phone}</h5>
+                    </Card.Text>
+                    <Card.Text>
+                      <h5>Seat: {passenger.seat}</h5>
+                    </Card.Text>
+                    <Card.Text>
+                      <h5>Destination: {passenger.dest}</h5>
+                    </Card.Text>
                   </Card.Body>
                   <Card.Footer>
                     {/* <Button className='mt-1'>Details</Button>{' '} */}
